@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Login.css'; 
-import Movies from "./Movies"
+import MainPage from "./Moviespage/MainPage";
  
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   if (userCredentialsCorrect == true){
-    return <Movies/> 
+    return <MainPage/> 
   }
 
   return (
@@ -34,7 +34,7 @@ const Login = () => {
             <input onChange = { (e) => setPassword(e.target.value) } type="password" id="password" />
           </div>
           
-          <button  id="myloginsubmitbutton" className="input-group" classNamentype="submit">Login</button>
+          <button  id="myloginsubmitbutton" className="input-group" classnametype="submit">Login</button>
         </form>
       </div>
     </div>
